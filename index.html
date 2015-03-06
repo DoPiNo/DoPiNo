@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="jquery-mobile/styles/jquery.mobile-1.3.1.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+
+    <script src="cordova.js" type="text/javascript"></script>
+    <script src="jquery-mobile/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="jquery-mobile/js/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+    <script src="scripts/login.js" type="text/javascript"></script>
+    <script src="scripts/location.js" type="text/javascript"></script>
+    
+</head>
+<body>
+<div data-role="page" id="pagina_inicio">
+	<a href="index.html" data-icon="gear"></a>
+	<div data-role="header" id="customHeader">
+		<h1>Smart Home</h1>
+        <a href="#"id="invisible"></a>
+        <a href="index.html" data-icon="home" data-iconpos="notext"></a>
+	</div>
+    
+    <hr color="#000000"></hr>
+
+    <div data-role="navbar" data-iconpos="left" class="ui-body-a">
+       	<ul>
+           	<li><a href="#page4">Iluminacion</a></li>
+           	<li><a href="b.html">Persianas</a></li>
+       	</ul>
+    </div><!-- /navbar -->
+        
+    <div data-role="navbar" data-iconpos="left" class="ui-body-a">
+        <ul>
+            <li><a href="#">Portero</a></li>
+        	<li><a href="#">Cortinas</a></li>
+        </ul>
+    </div><!-- /navbar -->
+    
+    <div data-role="navbar" data-iconpos="left" class="ui-body-a">
+        <ul>
+            <li><a href="#habitaciones" data-icon="home">Habitaciones</a></li>
+        	<li><a href="#">Categorias</a></li>
+        </ul>
+    </div><!-- /navbar -->
+
+    <hr color="#000000"></hr>
+       
+    
+	<div data-role="listview" data-theme="a" id="my-listview">
+      	<li data-icon="false"><a href="#" >Persianas Central</a>
+        	<div data-type="horizontal" data-role="controlgroup"  class="ui-btn-right">  
+                <a href="#" data-role="button" class="ui-custom-border" data-icon="arrow-u" data-iconpos="notext"></a>
+                <a href="#" data-role="button" class="ui-custom-border" data-icon="arrow-u" data-iconpos="notext"></a>
+                <a href="#" data-role="button" class="ui-custom-border" data-icon="arrow-d" data-iconpos="notext"></a>	
+            </div>
+        </li>
+    	<li data-icon="false"><a href="#">Cortinas Central</a>
+        	<div data-type="horizontal" data-role="controlgroup"  class="ui-btn-right">  
+                <a href="#" data-role="button" class="ui-custom-border" data-icon="arrow-u" data-iconpos="notext"></a>
+                <a href="#" data-role="button" class="ui-custom-border" data-icon="arrow-u" data-iconpos="notext"></a>
+                <a href="#" data-role="button" class="ui-custom-border" data-icon="arrow-u" data-iconpos="notext"></a>	
+            </div>
+        </li>
+    	<li data-icon="false"><a href="#">Toldos Central</a>
+        	<div data-type="horizontal" data-role="controlgroup"  class="ui-btn-right">  
+                <a href="#" data-role="button" class="ui-custom-border" data-icon="arrow-u" data-iconpos="notext"></a>
+                <a href="#" data-role="button" class="ui-custom-border" data-icon="arrow-u" data-iconpos="notext"></a>
+                <a href="#" data-role="button" class="ui-custom-border" data-icon="arrow-u" data-iconpos="notext"></a>	
+            </div>
+        </li>
+        <li data-icon="false"><a href="#">Temperatura exterior</a>
+        	<div class="temp-position">17,2º</div>
+        </li>
+        <li data-icon="false"><a href="#">Temperatura interior</a>
+        	<div class="temp-position">22,3º</div>
+        </li>
+        <li data-icon="false"><a href="#">Velocidad del viento</a>
+        	<div class="viento-position">3Km/h</div>
+        </li>
+        <li data-icon="false"><a href="#">Alarma</a>
+        	<div class="alarm-position">OFF</div>
+        </li>
+        <li data-icon="false"><a href="#">Estadisticas</a></li>
+    </div>		
+	
+	<hr color="#000000"></hr>
+    
+ 
+    
+</div> <!-- /pagina principal -->
+
+<div data-role="page" id="habitaciones">
+	<div data-role="header" id="customHeader">
+		<h1>Domotic Home Server</h1>
+        <a href="index.html" data-icon="home" data-iconpos="notext"></a>
+        <a href="#" data-icon="gear" data-iconpos="notext"></a>
+	</div>
+	<hr color="000000"></hr>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h2>Habitacion Matrimonio</h2>
+    	<ul data-role="listview" data-icon="false" data-filter="false">
+        	<li data-icon="check"><a href="index.html">Luces</a></li>
+        	<li><a href="index.html">Persiana</a></li>
+        	<li><a href="index.html">Cortina</a></li>
+        	<li><a href="index.html">Temperatura</a>
+            	<div class="temp-position">22,3ºC</div>
+            </li>
+    	</ul>
+	</div>
+    <hr color="#000000"></hr>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h2>Comedor</h2>
+    	<ul data-role="listview" data-icon="false" data-filter="false">
+        	<li><a href="#">Luces</a></li>
+        	<li><a href="#">Persiana</a></li>
+        	<li><a href="#">Cortinas</a></li>
+            <li><a href="#">TV</a></li>
+        	<li><a href="#">Temperatura</a>
+            	<div class="temp-position">22,3ºC</div>
+            </li>
+    	</ul>
+	</div>
+    <hr color="#000000"></hr>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h2>Salita</h2>
+    	<ul data-role="listview" data-icon="false" data-filter="false">
+        	<li><a href="#">Luces</a></li>
+        	<li><a href="#">Persiana</a></li>
+        	<li><a href="#">Cortina</a></li>
+        	<li><a href="#">Temperatura</a>
+            	<div class="temp-position">22,3ºC</div>
+            </li>
+    	</ul>
+	</div>
+    <hr color="#000000"></hr>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h2>Oficina</h2>
+    	<ul data-role="listview" data-icon="false" data-filter="false">
+        	<li><a href="#">Luces</a></li>
+        	<li><a href="#">Persiana</a></li>
+        	<li><a href="#">Cortina</a></li>
+        	<li><a href="#">Temperatura</a>
+            	<div class="temp-position">22,3ºC</div>
+            </li>
+    	</ul>
+	</div>
+    <hr color="#000000"></hr>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h2>Baño</h2>
+    	<ul data-role="listview" data-icon="false" data-filter="false">
+        	<li><a href="#">Luces</a></li>
+        	<li><a href="#">Extractor</a></li>
+        	<li><a href="#">Temperatura</a>
+            	<div class="temp-position">22,3ºC</div>
+            </li>
+    	</ul>
+	</div>
+    <hr color="#000000"></hr>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h2>Aseo</h2>
+    	<ul data-role="listview" data-icon="false" data-filter="false">
+        	<li><a href="#">Luces</a></li>
+        	<li><a href="#">Extractor</a></li>
+        	<li><a href="#">Temperatura</a>
+            	<div class="temp-position">22,3ºC</div>
+            </li>
+    	</ul>
+	</div>
+    <hr color="#000000"></hr>
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">
+	<h2>Cocina</h2>
+    	<ul data-role="listview" data-icon="false" data-filter="false">
+        	<li><a href="#">Luces</a></li>
+        	<li><a href="#">Persiana</a></li>
+        	<li><a href="#">Cortina</a></li>
+        	<li><a href="#">Temperatura</a>
+            	<div class="temp-position">22,3ºC</div>
+            </li>
+    	</ul>
+	</div>
+    <hr color="#000000"></hr>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Página tres</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Página cuatro</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+    
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+</body>
+</html>
+
