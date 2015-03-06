@@ -1,0 +1,71 @@
+#pagina_inicio{
+	background:#000;
+	height: 100%;
+}
+
+#habitaciones {
+	background:#000;
+}
+
+#customHeader {
+     background:#3C3;
+}
+
+#customFooter {
+     background:#3C3;
+}
+
+customList li{
+	/*background:#333 !important;*/
+	color:#F00 !important;
+	
+	/*border-color:#000 !important;*/
+}
+
+#invisible {
+	display:none;
+}
+
+.MenuPrincipal ul li a{
+	background:#333 !important;
+	color:#FFF !important;
+	border-bottom-color:#000 !important;
+	border-color:#000 !important;
+}
+
+#tamaño_label_listview {
+	font:Verdana, Geneva, sans-serif !important;
+	font-size:medium !important;
+	width:72% !important;
+	display:inline-block !important;
+}
+
+#my-listview .ui-li {
+	height:20% !important;
+}
+
+div.ui-btn-right{
+	float:right;
+}
+
+.ui-custom-border {
+	border-color:transparent !important;
+	border:none !important;
+	border-radius: .0em !important;
+	background:transparent !important;
+}
+
+.ui-btn-inner{
+	border:none !important;
+}
+
+
+
+
+a.ui-link-inherit{ float:left; }
+div.ui-btn-left{ float:left; }
+div.ui-btn-right{ float:right; margin-right:50px; border:0;}
+.ui-btn-text{ overflow:hidden; }
+.temp-position{float:right; margin-right:20px; margin-top:10px;}
+.viento-position{float:right; margin-right:20px; margin-top:10px;}
+.alarm-position{float:right; margin-right:20px; margin-top:10px; color:red}
