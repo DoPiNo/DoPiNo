@@ -33,7 +33,11 @@ customList li{
 	border-color:#000 !important;
 }
 
+<<<<<<< HEAD
 #tamaño_label_listview {
+=======
+#tamaÃ±o_label_listview {
+>>>>>>> origin/master
 	font:Verdana, Geneva, sans-serif !important;
 	font-size:medium !important;
 	width:72% !important;
@@ -68,4 +72,8 @@ div.ui-btn-right{ float:right; margin-right:50px; border:0;}
 .ui-btn-text{ overflow:hidden; }
 .temp-position{float:right; margin-right:20px; margin-top:10px;}
 .viento-position{float:right; margin-right:20px; margin-top:10px;}
+<<<<<<< HEAD
 .alarm-position{float:right; margin-right:20px; margin-top:10px; color:red}
+=======
+.alarm-position{float:right; margin-right:20px; margin-top:10px; color:red}
+>>>>>>> origin/master
